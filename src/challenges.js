@@ -1,23 +1,38 @@
 // Desafio 1 - Crie a função compareTrue
-const compareTrue = (param1, param2)=> {
+const compareTrue = (param1, param2) => {
   return (param1 === true && param2 === true) ? true : false;
 }
 // Desafio 2 - Crie a função splitSentence
-const splitSentence = (string)=> {
+const splitSentence = (string) => {
   return string.split(' ')
 }
 
 // Desafio 3 - Crie a função concatName
-const concatName = (array)=> {
+const concatName = (array) => {
   return `${array[array.length - 1]}, ${array[0]}`
 }
 
 // Desafio 4 - Crie a função footballPoints
-const footballPoints = (wins, ties)=> {
+const footballPoints = (wins, ties) => {
   return (wins * 3) + ties
 }
 
 // Desafio 5 - Crie a função highestCount
+const highestCount = (array) => {
+  let maiorNumero = array[0]
+  for (let numero of array){
+    if(numero > maiorNumero){
+      maiorNumero = numero
+    }
+  }
+  let contador = 0
+  for(let numero of array) {
+    if (numero === maiorNumero){
+      contador += 1
+    }
+  }
+  return contador
+}
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
@@ -31,17 +46,17 @@ const footballPoints = (wins, ties)=> {
 
 // Não modifique essas linhas
 module.exports = {
-  calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
-  calcRectangleArea: typeof calcRectangleArea === 'function' ? calcRectangleArea : (() => {}),
-  calcAllAreas: typeof calcAllAreas === 'function' ? calcAllAreas : (() => {}),
-  catAndMouse: typeof catAndMouse === 'function' ? catAndMouse : (() => {}),
-  compareTrue: typeof compareTrue === 'function' ? compareTrue : (() => {}),
-  concatName: typeof concatName === 'function' ? concatName : (() => {}),
-  decode: typeof decode === 'function' ? decode : (() => {}),
-  encode: typeof encode === 'function' ? encode : (() => {}),
-  fizzBuzz: typeof fizzBuzz === 'function' ? fizzBuzz : (() => {}),
-  footballPoints: typeof footballPoints === 'function' ? footballPoints : (() => {}),
-  highestCount: typeof highestCount === 'function' ? highestCount : (() => {}),
-  splitSentence: typeof splitSentence === 'function' ? splitSentence : (() => {}),
-  techList: typeof techList === 'function' ? techList : (() => {}),
+  calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => { }),
+  calcRectangleArea: typeof calcRectangleArea === 'function' ? calcRectangleArea : (() => { }),
+  calcAllAreas: typeof calcAllAreas === 'function' ? calcAllAreas : (() => { }),
+  catAndMouse: typeof catAndMouse === 'function' ? catAndMouse : (() => { }),
+  compareTrue: typeof compareTrue === 'function' ? compareTrue : (() => { }),
+  concatName: typeof concatName === 'function' ? concatName : (() => { }),
+  decode: typeof decode === 'function' ? decode : (() => { }),
+  encode: typeof encode === 'function' ? encode : (() => { }),
+  fizzBuzz: typeof fizzBuzz === 'function' ? fizzBuzz : (() => { }),
+  footballPoints: typeof footballPoints === 'function' ? footballPoints : (() => { }),
+  highestCount: typeof highestCount === 'function' ? highestCount : (() => { }),
+  splitSentence: typeof splitSentence === 'function' ? splitSentence : (() => { }),
+  techList: typeof techList === 'function' ? techList : (() => { }),
 };
