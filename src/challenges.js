@@ -1,6 +1,11 @@
 // Desafio 1 - Crie a função compareTrue
-
+const compareTrue = (param1, param2)=> {
+  return (param1 === true && param2 === true) ? true : false;
+}
 // Desafio 2 - Crie a função splitSentence
+const splitSentence = (string)=> {
+  return string.split(' ')
+}
 
 // Desafio 3 - Crie a função concatName
 
