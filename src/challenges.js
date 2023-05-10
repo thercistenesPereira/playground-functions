@@ -91,6 +91,7 @@ const fizzBuzz = (array)=> {
 
 // Desafio 9 - Crie a função encode e a função decode
 
+
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
