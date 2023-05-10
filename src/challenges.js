@@ -93,6 +93,16 @@ const fizzBuzz = (array)=> {
 
 
 // Desafio 10 - Crie a função techList
+const techList = (nomeTechs, nomePessoa)=> {
+  if (!nomeTechs || nomeTechs.length === 0) {
+    return []
+  } 
+  const resultado = []
+  for (let index = 0; index < nomeTechs.length; index += 1) {
+    resultado.push({tech: nomeTechs[index], name: nomePessoa})
+  }
+  return resultado.sort((a, b) => a.tech.localeCompare(b.tech))
+}
 
 // Não modifique essas linhas
 module.exports = {
