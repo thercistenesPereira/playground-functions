@@ -59,6 +59,17 @@ const calcRectangleArea = (base, height)=> {
 }
 
 // Desafio 7 - Crie a função catAndMouse
+const catAndMouse = (mouse, cat1, cat2)=> {
+  let distanciaCat1 = cat1 > mouse ? cat1 - mouse : mouse - cat1
+  let distanciaCat2 = cat2 > mouse ? cat2 - mouse : mouse - cat2
+  if (distanciaCat1 < distanciaCat2) {
+    return 'cat1'
+  } else if (distanciaCat1 > distanciaCat2) {
+    return 'cat2'
+  } else {
+    return 'os gatos trombam e o rato foge'
+  }
+}
 
 // Desafio 8 - Crie a função fizzBuzz
 
