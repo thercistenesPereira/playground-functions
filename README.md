@@ -2,6 +2,10 @@
 
 Este projeto consiste em uma coleção de funções JavaScript que abordam diferentes desafios. Cada desafio tem como objetivo testar e aprimorar habilidades em programação e lógica de programação. Abaixo está a descrição de cada função no projeto:
 
+![Static Badge](https://img.shields.io/badge/thercistenes-playground_functions-purple)
+
+![GitHub License](https://img.shields.io/github/license/thercistenesPereira/playground-functions)
+
 1. compareTrue:
    - Função que recebe dois parâmetros booleanos e retorna verdadeiro se ambos forem verdadeiros.
 2. splitSentence:
